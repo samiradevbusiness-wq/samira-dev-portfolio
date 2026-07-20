@@ -3,358 +3,346 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Titan Elite Fitness Club offers luxury training, elite coaching, and premium nutrition programs for modern athletes."
-    />
-    <meta name="theme-color" content="#050505" />
-    <title>Titan Elite Fitness Club</title>
+    <meta name="description" content="SAMIRA.DEV creates premium, high-converting websites for restaurants, gyms, schools, hospitals, cafés, and local businesses." />
+    <meta name="theme-color" content="#06030c" />
+    <title>SAMIRA.DEV | Premium Frontend Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-overlay"></div>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-ring"></div>
+      <p>Designing your digital presence</p>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="particles" id="particles"></div>
+
     <header class="topbar">
       <nav class="navbar container">
-        <a href="#home" class="brand">Titan <span>Elite</span></a>
-        <button class="nav-toggle" aria-label="Open menu">
+        <a href="#home" class="brand">SAMIRA.<span>DEV</span></a>
+        <button class="menu-btn" aria-label="Open menu">
           <span></span><span></span><span></span>
         </button>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#plans">Plans</a>
-          <a href="#trainers">Trainers</a>
-          <a href="#programs">Programs</a>
-          <a href="#contact">Contact</a>
-          <button class="theme-toggle" aria-label="Toggle theme">☀</button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link active" data-section="home">Home</a>
+          <a href="#about" class="nav-link" data-section="about">About</a>
+          <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          <a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a>
+          <a href="#services" class="nav-link" data-section="services">Services</a>
+          <a href="#process" class="nav-link" data-section="process">Process</a>
+          <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
+          <a href="#faq" class="nav-link" data-section="faq">FAQ</a>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
         </div>
       </nav>
     </header>
 
-    <a href="#contact" class="floating-join">Join Now</a>
-    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <a href="https://wa.me/samira.dev" class="floating-btn" target="_blank" rel="noreferrer">Hire Me</a>
+    <button class="back-top" aria-label="Back to top">↑</button>
 
     <main id="home">
-      <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content reveal">
-          <p class="eyebrow">Luxury Performance • Private Coaching • Elite Results</p>
-          <h1>Train like a champion. Live like a legend.</h1>
-          <p>
-            Discover a world-class fitness experience crafted for ambitious professionals,
-            athletes, and high-performers seeking strength, longevity, and discipline.
+      <section class="hero container reveal">
+        <div class="hero-text">
+          <p class="eyebrow">Frontend Developer • Premium Business Websites</p>
+          <h1>Websites that feel as premium as your brand.</h1>
+          <p class="hero-subtitle">
+            I design premium, high-converting websites that help businesses build trust, attract more customers and grow faster through modern digital experiences.
           </p>
           <div class="hero-actions">
-            <a href="#plans" class="btn btn-primary">View Memberships</a>
-            <a href="#about" class="btn btn-secondary">Explore Club</a>
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <a href="https://wa.me/samira.dev" class="btn btn-secondary" target="_blank" rel="noreferrer">Hire Me</a>
           </div>
           <div class="hero-stats">
-            <div>
-              <strong>24/7</strong>
-              <span>Access</span>
-            </div>
-            <div>
-              <strong>15+</strong>
-              <span>Elite Coaches</span>
-            </div>
-            <div>
-              <strong>98%</strong>
-              <span>Member Retention</span>
-            </div>
+            <div><strong data-count="6">0</strong><span>Premium Projects</span></div>
+            <div><strong data-count="100">0</strong><span>Responsive Design</span></div>
+            <div><strong data-count="24">0</strong><span>Modern UI</span></div>
           </div>
         </div>
+
+        <div class="hero-visual">
+          <div class="premium-badge">✨ Available for Freelance</div>
+          <div class="hero-card glass-card">
+            <div class="hero-card-inner">
+              <div class="card-topline">
+                <p class="small-label">Selected Focus</p>
+                <span class="mini-dot"></span>
+              </div>
+              <div class="macbook-scene">
+                <div class="macbook">
+                  <div class="macbook-screen">
+                    <div class="screen-glare"></div>
+                    <div class="screen-preview">
+                      <div class="preview-topbar">
+                        <span class="preview-logo">Royal Spice</span>
+                        <span class="preview-pill">Book Table</span>
+                      </div>
+                      <div class="preview-banner">
+                        <h4>Elegant Dining, Elevated Online</h4>
+                        <p>Luxury food experiences crafted for unforgettable first impressions.</p>
+                      </div>
+                      <div class="preview-card-row">
+                        <div class="preview-card large"></div>
+                        <div class="preview-card"></div>
+                      </div>
+                      <div class="preview-footer">
+                        <span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="macbook-base"></div>
+                </div>
+              </div>
+              <p class="hero-card-copy">Luxury UI • Conversion-Focused • Lightning-fast performance</p>
+            </div>
+          </div>
+
+          <div class="skill-badges" aria-hidden="true">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>Premium UI</span>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>↓</span>
+          <p>Scroll to Explore</p>
+        </div>
       </section>
 
-      <section id="about" class="section section-grid container reveal">
-        <div>
-          <p class="eyebrow">About Titan Elite</p>
-          <h2>Where precision training meets luxurious performance.</h2>
-          <p>
-            Titan Elite Fitness Club is designed for those who demand more from every session.
-            Our state-of-the-art training floors, private recovery suites, and elite coaching
-            systems deliver results with unmatched sophistication.
-          </p>
-          <p>
-            Every detail is engineered to elevate your routine, from the atmosphere to the
-            nutrition strategies and measurable progress tracking.
-          </p>
-        </div>
-        <div class="card glass-card">
-          <h3>Why Members Choose Us</h3>
-          <ul class="feature-list">
-            <li>Performance-based programming</li>
-            <li>Luxury recovery and wellness spaces</li>
-            <li>Private coaching and sports science</li>
-            <li>Premium nutrition and habit support</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="plans" class="section container reveal">
+      <section id="about" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Membership Plans</p>
-          <h2>Choose your level of elite access.</h2>
+          <p class="eyebrow">About</p>
+          <h2>Premium frontend experiences built for serious business growth.</h2>
         </div>
-        <div class="cards-grid">
-          <article class="card plan-card">
-            <h3>Foundation</h3>
-            <p class="price">₹4,999<span>/month</span></p>
+        <div class="about-grid">
+          <div class="glass-card about-card">
+            <p>
+              I’m Samira, a frontend web developer who creates beautiful business websites with modern UI, responsive layouts, and premium user experience. Every project is crafted to build trust, improve conversions, and make your brand unforgettable.
+            </p>
+          </div>
+          <div class="glass-card feature-list-card">
             <ul>
-              <li>Full gym access</li>
-              <li>Group classes</li>
-              <li>Recovery lounge</li>
+              <li>Business-focused design strategy</li>
+              <li>Mobile-first responsive layouts</li>
+              <li>Lightning-fast performance</li>
+              <li>SEO-ready and conversion-driven</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Reserve</a>
-          </article>
-          <article class="card plan-card featured">
-            <h3>Signature</h3>
-            <p class="price">₹9,999<span>/month</span></p>
-            <ul>
-              <li>Unlimited classes</li>
-              <li>2 PT sessions</li>
-              <li>Nutrition guidance</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary">Reserve</a>
-          </article>
-          <article class="card plan-card">
-            <h3>Private Elite</h3>
-            <p class="price">₹19,999<span>/month</span></p>
-            <ul>
-              <li>Private coaching</li>
-              <li>Body composition tracking</li>
-              <li>Priority concierge</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary">Reserve</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="trainers" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Personal Trainers</p>
-          <h2>World-class experts with a luxury standard.</h2>
-        </div>
-        <div class="cards-grid trainers-grid">
-          <article class="card trainer-card">
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Trainer coaching a client" />
-            <h3>Marcus Stone</h3>
-            <p>Strength & Performance Specialist</p>
-          </article>
-          <article class="card trainer-card">
-            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=800&q=80" alt="Female trainer demonstrating exercise" />
-            <h3>Jade Laurent</h3>
-            <p>Functional Movement & Mobility</p>
-          </article>
-          <article class="card trainer-card">
-            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Trainer guiding workout plan" />
-            <h3>Rayan Cole</h3>
-            <p>Fat Loss & Hybrid Conditioning</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="programs" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Workout Programs</p>
-          <h2>Programs crafted for performance, aesthetics, and longevity.</h2>
-        </div>
-        <div class="program-list">
-          <div class="program-item">
-            <h3>Strength Builder</h3>
-            <p>Progressive resistance training for power, size, and athletic output.</p>
-          </div>
-          <div class="program-item">
-            <h3>Shred & Sculpt</h3>
-            <p>High-output conditioning paired with nutrition for visible definition.</p>
-          </div>
-          <div class="program-item">
-            <h3>Recovery Reset</h3>
-            <p>Mobility, core stability, and restorative recovery tailored to your body.</p>
           </div>
         </div>
       </section>
 
-      <section class="section container reveal">
+      <section id="skills" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">BMI Calculator</p>
-          <h2>Calculate your body mass index instantly.</h2>
+          <p class="eyebrow">Skills</p>
+          <h2>Crafted with modern technologies and premium execution.</h2>
         </div>
-        <div class="calculator-card card glass-card">
-          <form id="bmi-form">
-            <div class="form-row">
-              <label>Height (cm)</label>
-              <input id="height" type="number" min="100" step="0.1" required />
+        <div class="cards-grid skill-grid">
+          <article class="glass-card skill-card"><h3>HTML5</h3><p>Semantic, clean and structured foundation.</p></article>
+          <article class="glass-card skill-card"><h3>CSS3</h3><p>Elegant styling, glassmorphism and premium animation.</p></article>
+          <article class="glass-card skill-card"><h3>JavaScript</h3><p>Dynamic interactions and polished user flows.</p></article>
+          <article class="glass-card skill-card"><h3>Responsive Web Design</h3><p>Seamless experience across all screen sizes.</p></article>
+          <article class="glass-card skill-card"><h3>Modern UI Design</h3><p>Minimal, luxurious and conversion-driven visuals.</p></article>
+          <article class="glass-card skill-card"><h3>Website Optimization</h3><p>Speed, SEO and performance tuned for business impact.</p></article>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Luxury projects designed to feel unmistakably premium.</h2>
+        </div>
+        <div class="cards-grid project-grid">
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-royal">
+              <span class="thumb-badge">Restaurant</span>
             </div>
-            <div class="form-row">
-              <label>Weight (kg)</label>
-              <input id="weight" type="number" min="30" step="0.1" required />
+            <div class="project-body">
+              <h3>Royal Spice Restaurant</h3>
+              <p>Elegant booking flow and a refined visual system for a high-end dining experience.</p>
+              <div class="card-actions">
+                <a href="../Project-01-Royal-Spice/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
+              </div>
             </div>
-            <button class="btn btn-primary" type="submit">Calculate BMI</button>
-          </form>
-          <div id="bmi-result" class="bmi-result">Your BMI result will appear here.</div>
+          </article>
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-gym">
+              <span class="thumb-badge">Fitness</span>
+            </div>
+            <div class="project-body">
+              <h3>Elite Gym</h3>
+              <p>Bold, athletic design that builds credibility and gives memberships instant value.</p>
+              <div class="card-actions">
+                <a href="../Titan-Elite-Fitness-Club/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-school">
+              <span class="thumb-badge">Education</span>
+            </div>
+            <div class="project-body">
+              <h3>Modern School</h3>
+              <p>Clean architecture, polished storytelling, and a layout designed for trust.</p>
+              <div class="card-actions">
+                <a href="../Project-03-School/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-coffee">
+              <span class="thumb-badge">Cafe</span>
+            </div>
+            <div class="project-body">
+              <h3>Coffee Shop</h3>
+              <p>Warm, inviting visuals that increase local discovery and daily foot traffic.</p>
+              <div class="card-actions">
+                <a href="../PROJECT-04 — Coffee Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-barber">
+              <span class="thumb-badge">Barber</span>
+            </div>
+            <div class="project-body">
+              <h3>Premium Barber</h3>
+              <p>Refined aesthetics and a stylish appointment-first experience for modern grooming brands.</p>
+              <div class="card-actions">
+                <a href="../PROJECT-05 — Luxury Barber Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-hospital">
+              <span class="thumb-badge">Healthcare</span>
+            </div>
+            <div class="project-body">
+              <h3>Hospital</h3>
+              <p>Calming, dependable digital presence that feels trustworthy and professional.</p>
+              <div class="card-actions">
+                <a href="../PROJECT-06 — Premium Hospital/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Premium solutions for modern businesses.</h2>
+        </div>
+        <div class="cards-grid services-grid">
+          <article class="glass-card service-card"><h3>Business Website Design</h3></article>
+          <article class="glass-card service-card"><h3>Landing Pages</h3></article>
+          <article class="glass-card service-card"><h3>Responsive Websites</h3></article>
+          <article class="glass-card service-card"><h3>Website Redesign</h3></article>
+          <article class="glass-card service-card"><h3>Portfolio Websites</h3></article>
+          <article class="glass-card service-card"><h3>Business Branding</h3></article>
         </div>
       </section>
 
       <section class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Nutrition Plans</p>
-          <h2>Fuel your body with premium nutrition structure.</h2>
+          <p class="eyebrow">Why Choose Me</p>
+          <h2>Luxury quality, clear strategy and reliable delivery.</h2>
         </div>
-        <div class="cards-grid">
-          <article class="card nutrition-card">
-            <h3>Performance Fuel</h3>
-            <p>Macro-based plans for strength and training output.</p>
-          </article>
-          <article class="card nutrition-card">
-            <h3>Lean Definition</h3>
-            <p>Targeted meal guidance for body recomposition and energy.</p>
-          </article>
-          <article class="card nutrition-card">
-            <h3>Recovery Balance</h3>
-            <p>Anti-inflammatory nutrition designed for peak recovery.</p>
-          </article>
+        <div class="cards-grid why-grid">
+          <article class="glass-card why-card"><h3>Modern UI</h3><p>Elegant visual systems with high-end polish.</p></article>
+          <article class="glass-card why-card"><h3>Fast Loading</h3><p>Optimized for performance and smooth experience.</p></article>
+          <article class="glass-card why-card"><h3>Responsive Design</h3><p>Beautiful on phone, tablet and desktop.</p></article>
+          <article class="glass-card why-card"><h3>Clean Code</h3><p>Structured and maintainable development.</p></article>
+          <article class="glass-card why-card"><h3>Professional Quality</h3><p>Premium aesthetics built for serious clients.</p></article>
+          <article class="glass-card why-card"><h3>Affordable Solutions</h3><p>High value without compromising quality.</p></article>
         </div>
       </section>
 
-      <section class="section container reveal">
+      <section id="process" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Client Transformations</p>
-          <h2>Results that speak louder than promises.</h2>
+          <p class="eyebrow">Working Process</p>
+          <h2>A refined process from first conversation to final launch.</h2>
         </div>
-        <div class="cards-grid transform-grid">
-          <article class="card transform-card">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Before and after body transformation" />
-            <h3>Lost 18kg</h3>
-            <p>In 12 weeks with strength + nutrition programming.</p>
-          </article>
-          <article class="card transform-card">
-            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=80" alt="Fitness transformation portrait" />
-            <h3>Built Lean Muscle</h3>
-            <p>Enhanced posture and athletic power in 10 weeks.</p>
-          </article>
+        <div class="process-list">
+          <div class="glass-card process-item"><span>01</span><h3>Discussion</h3></div>
+          <div class="glass-card process-item"><span>02</span><h3>Planning</h3></div>
+          <div class="glass-card process-item"><span>03</span><h3>Design</h3></div>
+          <div class="glass-card process-item"><span>04</span><h3>Development</h3></div>
+          <div class="glass-card process-item"><span>05</span><h3>Testing</h3></div>
+          <div class="glass-card process-item"><span>06</span><h3>Delivery</h3></div>
         </div>
       </section>
 
-      <section class="section container reveal">
+      <section id="testimonials" class="section container reveal">
         <div class="section-heading">
           <p class="eyebrow">Testimonials</p>
-          <h2>Members trust Titan Elite for life-changing performance.</h2>
+          <h2>Trusted by founders, brands and local business owners.</h2>
         </div>
-        <div class="cards-grid">
-          <article class="card testimonial-card">
-            <p>“The level of detail is extraordinary. Every session feels premium and intentional.”</p>
-            <h3>- Aanya S.</h3>
+        <div class="cards-grid testimonial-grid">
+          <article class="glass-card quote-card">
+            <p>“The website felt instantly premium. Our bookings increased within days.”</p>
+            <h3>— A. Malik</h3>
           </article>
-          <article class="card testimonial-card">
-            <p>“My coach mapped out a plan that transformed my composure, strength, and energy.”</p>
-            <h3>- Rahul T.</h3>
+          <article class="glass-card quote-card">
+            <p>“Every detail felt intentional. The new site elevated our entire brand.”</p>
+            <h3>— R. Khan</h3>
           </article>
-          <article class="card testimonial-card">
-            <p>“This club feels like a private performance sanctuary rather than a normal gym.”</p>
-            <h3>- Nisha K.</h3>
+          <article class="glass-card quote-card">
+            <p>“Professional, polished and modern. Exactly what we needed.”</p>
+            <h3>— D. Sharma</h3>
           </article>
         </div>
       </section>
 
-      <section class="section container reveal">
+      <section id="faq" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Success Statistics</p>
-          <h2>Proof of excellence, measured with precision.</h2>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="count" data-count="5000">0</span>
-            <p>Members Transformed</p>
-          </div>
-          <div class="stat-item">
-            <span class="count" data-count="92">0</span>
-            <p>Client Satisfaction %</p>
-          </div>
-          <div class="stat-item">
-            <span class="count" data-count="18">0</span>
-            <p>Years of Expertise</p>
-          </div>
-          <div class="stat-item">
-            <span class="count" data-count="4">0</span>
-            <p>Global Studios</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Gallery</p>
-          <h2>Luxury spaces designed for elite training.</h2>
-        </div>
-        <div class="gallery-grid">
-          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Premium gym interior" />
-          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Training floor" />
-          <img src="https://images.unsplash.com/photo-1517343985841-f8b2d66e010b?auto=format&fit=crop&w=800&q=80" alt="Recovery area" />
-          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Athlete training" />
-        </div>
-      </section>
-
-      <section class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">FAQs</p>
-          <h2>Everything you need to know before joining.</h2>
+          <p class="eyebrow">FAQ</p>
+          <h2>Everything you need to know before we begin.</h2>
         </div>
         <div class="faq-list">
-          <details class="faq-item">
-            <summary>Do you offer private coaching?</summary>
-            <p>Yes, we offer tailored one-on-one coaching with elite trainers and comprehensive progress tracking.</p>
+          <details class="glass-card faq-item">
+            <summary>How long does a project take?</summary>
+            <p>Most premium websites are delivered within 5 to 14 days depending on scope.</p>
           </details>
-          <details class="faq-item">
-            <summary>Is the club suitable for beginners?</summary>
-            <p>Absolutely. Our programs are adaptive and can be scaled to fit all levels of experience.</p>
+          <details class="glass-card faq-item">
+            <summary>Do you build fully responsive websites?</summary>
+            <p>Yes. Every project is designed mobile-first and optimized across all devices.</p>
           </details>
-          <details class="faq-item">
-            <summary>Are nutrition plans included?</summary>
-            <p>Nutrition guidance is included in premium membership tiers and can be customized further.</p>
+          <details class="glass-card faq-item">
+            <summary>Can you redesign an existing website?</summary>
+            <p>Absolutely. I can modernize and improve your current site with a premium redesign.</p>
           </details>
         </div>
       </section>
 
       <section id="contact" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Contact & Visit</p>
-          <h2>Book your private tour and experience the club.</h2>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something exceptional for your business.</h2>
         </div>
         <div class="contact-grid">
-          <div class="card glass-card">
-            <form id="membership-form">
-              <div class="form-row">
-                <label>Name</label>
-                <input type="text" required />
-              </div>
-              <div class="form-row">
-                <label>Email</label>
-                <input type="email" required />
-              </div>
-              <div class="form-row">
-                <label>Preferred Plan</label>
-                <select>
-                  <option>Foundation</option>
-                  <option>Signature</option>
-                  <option>Private Elite</option>
-                </select>
-              </div>
-              <button class="btn btn-primary" type="submit">Request Membership</button>
-            </form>
-            <p id="form-message" class="form-message"></p>
-          </div>
-          <div class="card map-card">
-            <iframe
-              title="Titan Elite Fitness Club Map"
-              src="https://www.google.com/maps?q=New%20York%2C%20USA&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <form class="glass-card contact-form">
+            <div class="form-row"><label>Name</label><input type="text" required /></div>
+            <div class="form-row"><label>Email</label><input type="email" required /></div>
+            <div class="form-row"><label>Business Name</label><input type="text" /></div>
+            <div class="form-row"><label>Project Details</label><textarea rows="5" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+          <div class="glass-card contact-info">
+            <h3>Direct Contact</h3>
+            <p><a href="mailto:samiradev.business@gmail.com">samiradev.business@gmail.com</a></p>
+            <p><a href="https://instagram.com/officialsamiradev" target="_blank" rel="noreferrer">Instagram</a></p>
+            <p><a href="https://wa.me/samira.dev" target="_blank" rel="noreferrer">WhatsApp</a> <!-- Replace with direct WhatsApp link if username support is unavailable --></p>
           </div>
         </div>
       </section>
@@ -362,15 +350,29 @@
 
     <footer class="footer">
       <div class="container footer-content">
-        <div>
-          <a href="#home" class="brand">Titan <span>Elite</span></a>
-          <p>Luxury fitness experiences for the ambitious modern athlete.</p>
+        <div class="footer-brand">
+          <p class="footer-name">SAMIRA.DEV</p>
+          <p>Frontend Web Developer</p>
+          <p>Building Premium Websites That Help Businesses Grow.</p>
+          <p>Email: <a href="mailto:samiradev.business@gmail.com">samiradev.business@gmail.com</a></p>
+          <p>Instagram: @officialsamiradev</p>
+          <p>WhatsApp: @samira.dev</p>
         </div>
-        <div>
-          <h3>Connect</h3>
-          <a href="mailto:hello@titanelite.com">hello@titanelite.com</a>
-          <a href="tel:+919999999999">+91 99999 99999</a>
+        <div class="footer-socials">
+          <a class="social-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9a3.1 3.1 0 0 0-.9-2.3c3-.3 6.1-1.5 6.1-6.8A5.1 5.1 0 0 0 19 3.8a4.8 4.8 0 0 0-.1-3.5s-1.2-.4-3.9 1.5a13.2 13.2 0 0 0-7 0C5.3.3 4.1.7 4.1.7A4.8 4.8 0 0 0 4 4.2a5.1 5.1 0 0 0-1.4 3.5c0 5.3 3.1 6.5 6.1 6.8A3.1 3.1 0 0 0 8 15.3V19"></path></svg>
+          </a>
+          <a class="social-link" href="https://instagram.com/officialsamiradev" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.5"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+          </a>
+          <a class="social-link" href="https://wa.me/samira.dev" target="_blank" rel="noreferrer" aria-label="WhatsApp"> <!-- Replace with direct WhatsApp link if username support is unavailable -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 19.8 3 21l1.2-3.2A9.2 9.2 0 1 1 6.2 19.8Z"></path><path d="M8.5 8.8h.01"></path><path d="M12 8.8h.01"></path><path d="M15.5 8.8h.01"></path></svg>
+          </a>
+          <a class="social-link" href="mailto:samira@samira.dev" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+          </a>
         </div>
+        <p class="footer-copy">© 2026 Samira.dev</p>
       </div>
     </footer>
 
