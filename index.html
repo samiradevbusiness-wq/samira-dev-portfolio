@@ -46,14 +46,36 @@
     <main id="home">
       <section class="hero container reveal">
         <div class="hero-text">
+          <div class="hero-badge" aria-label="Available for freelance">
+            <span class="hero-badge-icon">🚀</span>
+            <span>Available for Freelance</span>
+          </div>
           <p class="eyebrow">Frontend Developer • Premium Business Websites</p>
           <h1>Websites that feel as premium as your brand.</h1>
           <p class="hero-subtitle">
             I design premium, high-converting websites that help businesses build trust, attract more customers and grow faster through modern digital experiences.
           </p>
+          <p class="hero-trust">⭐ Trusted for Premium Business Websites</p>
           <div class="hero-actions">
             <a href="#portfolio" class="btn btn-primary">View My Work</a>
             <a href="https://wa.me/samira.dev" class="btn btn-secondary" target="_blank" rel="noreferrer">Hire Me</a>
+          </div>
+          <div class="hero-highlights">
+            <article class="highlight-card glass-card">
+              <div class="highlight-icon">⚡</div>
+              <h3>Fast Delivery</h3>
+              <p>Launch-ready experiences delivered with speed and polish.</p>
+            </article>
+            <article class="highlight-card glass-card">
+              <div class="highlight-icon">🎨</div>
+              <h3>Modern UI / UX</h3>
+              <p>Luxury visuals that feel effortless and conversion-focused.</p>
+            </article>
+            <article class="highlight-card glass-card">
+              <div class="highlight-icon">📱</div>
+              <h3>Fully Responsive</h3>
+              <p>Elegant layouts that perform beautifully on every screen.</p>
+            </article>
           </div>
           <div class="hero-stats">
             <div><strong data-count="6">0</strong><span>Premium Projects</span></div>
@@ -63,6 +85,7 @@
         </div>
 
         <div class="hero-visual">
+          <div class="hero-spotlight" aria-hidden="true"></div>
           <div class="premium-badge">✨ Available for Freelance</div>
           <div class="hero-card glass-card">
             <div class="hero-card-inner">
@@ -114,6 +137,36 @@
         </div>
       </section>
 
+      <section class="section container reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Why Clients Choose Me</p>
+          <h2>Why Clients Choose Me</h2>
+          <p class="section-subtitle">I focus on creating premium business websites that help brands stand out and attract customers.</p>
+        </div>
+        <div class="cards-grid why-grid">
+          <article class="glass-card why-card feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Fast Delivery</h3>
+            <p>Fast turnarounds without compromising quality, polish, or strategy.</p>
+          </article>
+          <article class="glass-card why-card feature-card">
+            <div class="feature-icon">💎</div>
+            <h3>Premium Quality</h3>
+            <p>Thoughtful visuals and refined details that make a lasting impression.</p>
+          </article>
+          <article class="glass-card why-card feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Mobile Friendly</h3>
+            <p>Responsive experiences built to feel excellent on every device.</p>
+          </article>
+          <article class="glass-card why-card feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Friendly Communication</h3>
+            <p>Clear guidance and collaborative support from concept to launch.</p>
+          </article>
+        </div>
+      </section>
+
       <section id="about" class="section container reveal">
         <div class="section-heading">
           <p class="eyebrow">About</p>
@@ -160,12 +213,18 @@
           <article class="glass-card project-card reveal">
             <div class="project-thumb thumb-royal">
               <span class="thumb-badge">Restaurant</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Luxury Dining</span>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Royal Spice Restaurant</h3>
+              <div class="project-heading">
+                <h3>Royal Spice Restaurant</h3>
+                <p class="project-category-label">Elegant booking-first experience</p>
+              </div>
               <p>Elegant booking flow and a refined visual system for a high-end dining experience.</p>
               <div class="card-actions">
-                <a href="../Project-01-Royal-Spice/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="../Project-01-Royal-Spice/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
                 <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
               </div>
             </div>
@@ -173,12 +232,18 @@
           <article class="glass-card project-card reveal">
             <div class="project-thumb thumb-gym">
               <span class="thumb-badge">Fitness</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Performance Brand</span>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Elite Gym</h3>
+              <div class="project-heading">
+                <h3>Elite Gym</h3>
+                <p class="project-category-label">Bold, athletic and conversion-led</p>
+              </div>
               <p>Bold, athletic design that builds credibility and gives memberships instant value.</p>
               <div class="card-actions">
-                <a href="../Titan-Elite-Fitness-Club/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="../Titan-Elite-Fitness-Club/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
                 <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
               </div>
             </div>
@@ -186,12 +251,18 @@
           <article class="glass-card project-card reveal">
             <div class="project-thumb thumb-school">
               <span class="thumb-badge">Education</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Trust & Clarity</span>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Modern School</h3>
+              <div class="project-heading">
+                <h3>Modern School</h3>
+                <p class="project-category-label">Clear, welcoming and polished</p>
+              </div>
               <p>Clean architecture, polished storytelling, and a layout designed for trust.</p>
               <div class="card-actions">
-                <a href="../Project-03-School/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="../Project-03-School/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
                 <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
               </div>
             </div>
@@ -199,12 +270,18 @@
           <article class="glass-card project-card reveal">
             <div class="project-thumb thumb-coffee">
               <span class="thumb-badge">Cafe</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Local Warmth</span>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Coffee Shop</h3>
+              <div class="project-heading">
+                <h3>Coffee Shop</h3>
+                <p class="project-category-label">Inviting and highly discoverable</p>
+              </div>
               <p>Warm, inviting visuals that increase local discovery and daily foot traffic.</p>
               <div class="card-actions">
-                <a href="../PROJECT-04 — Coffee Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="../PROJECT-04 — Coffee Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
                 <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
               </div>
             </div>
@@ -212,12 +289,18 @@
           <article class="glass-card project-card reveal">
             <div class="project-thumb thumb-barber">
               <span class="thumb-badge">Barber</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Luxury Grooming</span>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Premium Barber</h3>
+              <div class="project-heading">
+                <h3>Luxury Barber Shop</h3>
+                <p class="project-category-label">Stylish, appointment-first experience</p>
+              </div>
               <p>Refined aesthetics and a stylish appointment-first experience for modern grooming brands.</p>
               <div class="card-actions">
-                <a href="../PROJECT-05 — Luxury Barber Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="../PROJECT-05 — Luxury Barber Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
                 <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
               </div>
             </div>
@@ -225,13 +308,103 @@
           <article class="glass-card project-card reveal">
             <div class="project-thumb thumb-hospital">
               <span class="thumb-badge">Healthcare</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Calm & Trusted</span>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Hospital</h3>
+              <div class="project-heading">
+                <h3>Premium Hospital</h3>
+                <p class="project-category-label">Professional and reassuring</p>
+              </div>
               <p>Calming, dependable digital presence that feels trustworthy and professional.</p>
               <div class="card-actions">
-                <a href="../PROJECT-06 — Premium Hospital/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Preview</a>
+                <a href="../PROJECT-06 — Premium Hospital/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
                 <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-royal">
+              <span class="thumb-badge">Business</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Premium Growth</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-heading">
+                <h3>Premium Business Agency Website</h3>
+                <p class="project-category-label">Modern corporate presence</p>
+              </div>
+              <p>A premium responsive business website built using HTML, CSS, JavaScript and Bootstrap. Features modern UI, glassmorphism cards, responsive layout, SEO-friendly structure and smooth animations.</p>
+              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-royal">
+              <span class="thumb-badge">Restaurant</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Fine Dining</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-heading">
+                <h3>Modern Restaurant Website</h3>
+                <p class="project-category-label">Elegant dining experience</p>
+              </div>
+              <p>A fully responsive restaurant website with elegant food sections, online menu, reservation system, modern animations and mobile-friendly design.</p>
+              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-gym">
+              <span class="thumb-badge">Fitness</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Performance Brand</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-heading">
+                <h3>Professional Gym Website</h3>
+                <p class="project-category-label">Premium training brand</p>
+              </div>
+              <p>A modern fitness website featuring trainers, pricing plans, workout programs, responsive layout and premium user experience.</p>
+              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-thumb thumb-school">
+              <span class="thumb-badge">Education</span>
+              <div class="thumb-overlay">
+                <span class="thumb-category">Future Ready</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-heading">
+                <h3>Bright Future International School</h3>
+                <p class="project-category-label">Modern educational experience</p>
+              </div>
+              <p>A clean responsive school website with courses, admissions, facilities, gallery, contact section and modern educational design.</p>
+              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
               </div>
             </div>
           </article>
@@ -285,21 +458,29 @@
 
       <section id="testimonials" class="section container reveal">
         <div class="section-heading">
-          <p class="eyebrow">Testimonials</p>
-          <h2>Trusted by founders, brands and local business owners.</h2>
+          <p class="eyebrow">What You Can Expect</p>
+          <h2>What You Can Expect</h2>
         </div>
         <div class="cards-grid testimonial-grid">
-          <article class="glass-card quote-card">
-            <p>“The website felt instantly premium. Our bookings increased within days.”</p>
-            <h3>— A. Malik</h3>
+          <article class="glass-card quote-card trust-card">
+            <div class="feature-icon">🗣️</div>
+            <h3>Professional Communication</h3>
+            <p>Clear updates, thoughtful guidance, and a calm process from first idea to final launch.</p>
           </article>
-          <article class="glass-card quote-card">
-            <p>“Every detail felt intentional. The new site elevated our entire brand.”</p>
-            <h3>— R. Khan</h3>
+          <article class="glass-card quote-card trust-card">
+            <div class="feature-icon">🧩</div>
+            <h3>Clean & Modern Code</h3>
+            <p>Structured, maintainable development that keeps your website reliable and easy to grow.</p>
           </article>
-          <article class="glass-card quote-card">
-            <p>“Professional, polished and modern. Exactly what we needed.”</p>
-            <h3>— D. Sharma</h3>
+          <article class="glass-card quote-card trust-card">
+            <div class="feature-icon">✨</div>
+            <h3>Premium Responsive Design</h3>
+            <p>Every layout is polished across laptops, tablets, and mobile screens.</p>
+          </article>
+          <article class="glass-card quote-card trust-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Long-Term Support</h3>
+            <p>Ongoing care and thoughtful refinement so your website stays strong after launch.</p>
           </article>
         </div>
       </section>
