@@ -3,560 +3,552 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SAMIRA.DEV creates premium, high-converting websites for restaurants, gyms, schools, hospitals, cafés, and local businesses." />
-    <meta name="theme-color" content="#06030c" />
-    <title>SAMIRA.DEV | Premium Frontend Developer</title>
+    <meta
+      name="description"
+      content="Northstar Studio creates premium, responsive websites for modern brands, restaurants, gyms, schools, and service businesses."
+    />
+    <meta name="theme-color" content="#2563EB" />
+    <title>Northstar Studio | Premium Digital Agency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="loading-screen" id="loadingScreen">
-      <div class="loading-ring"></div>
-      <p>Designing your digital presence</p>
+    <div class="page-loader" aria-label="Loading website">
+      <div class="loader-ring"></div>
     </div>
 
-    <div class="cursor-glow" id="cursorGlow"></div>
-    <div class="particles" id="particles"></div>
-
     <header class="topbar">
-      <nav class="navbar container">
-        <a href="#home" class="brand">SAMIRA.<span>DEV</span></a>
-        <button class="menu-btn" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links" id="navLinks">
-          <a href="#home" class="nav-link active" data-section="home">Home</a>
-          <a href="#about" class="nav-link" data-section="about">About</a>
-          <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-          <a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a>
-          <a href="#services" class="nav-link" data-section="services">Services</a>
-          <a href="#process" class="nav-link" data-section="process">Process</a>
-          <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
-          <a href="#faq" class="nav-link" data-section="faq">FAQ</a>
-          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-        </div>
+      <a class="brand" href="#home" aria-label="Northstar Studio home">
+        <span class="brand-mark">N</span>
+        <span>
+          <strong>Northstar Studio</strong>
+          <small>Digital Agency</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
       </nav>
+
+      <a class="btn btn-dark btn-sm" href="#contact">Book a Call</a>
     </header>
 
-    <a href="https://wa.me/samira.dev" class="floating-btn" target="_blank" rel="noreferrer">Hire Me</a>
-    <button class="back-top" aria-label="Back to top">↑</button>
-
     <main id="home">
-      <section class="hero container reveal">
-        <div class="hero-text">
-          <div class="hero-badge" aria-label="Available for freelance">
-            <span class="hero-badge-icon">🚀</span>
-            <span>Available for Freelance</span>
-          </div>
-          <p class="eyebrow">Frontend Developer • Premium Business Websites</p>
-          <h1>Websites that feel as premium as your brand.</h1>
-          <p class="hero-subtitle">
-            I design premium, high-converting websites that help businesses build trust, attract more customers and grow faster through modern digital experiences.
-          </p>
-          <p class="hero-trust">⭐ Trusted for Premium Business Websites</p>
-          <div class="hero-actions">
-            <a href="#portfolio" class="btn btn-primary">View My Work</a>
-            <a href="https://wa.me/samira.dev" class="btn btn-secondary" target="_blank" rel="noreferrer">Hire Me</a>
-          </div>
-          <div class="hero-highlights">
-            <article class="highlight-card glass-card">
-              <div class="highlight-icon">⚡</div>
-              <h3>Fast Delivery</h3>
-              <p>Launch-ready experiences delivered with speed and polish.</p>
-            </article>
-            <article class="highlight-card glass-card">
-              <div class="highlight-icon">🎨</div>
-              <h3>Modern UI / UX</h3>
-              <p>Luxury visuals that feel effortless and conversion-focused.</p>
-            </article>
-            <article class="highlight-card glass-card">
-              <div class="highlight-icon">📱</div>
-              <h3>Fully Responsive</h3>
-              <p>Elegant layouts that perform beautifully on every screen.</p>
-            </article>
-          </div>
-          <div class="hero-stats">
-            <div><strong data-count="6">0</strong><span>Premium Projects</span></div>
-            <div><strong data-count="100">0</strong><span>Responsive Design</span></div>
-            <div><strong data-count="24">0</strong><span>Modern UI</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-spotlight" aria-hidden="true"></div>
-          <div class="premium-badge">✨ Available for Freelance</div>
-          <div class="hero-card glass-card">
-            <div class="hero-card-inner">
-              <div class="card-topline">
-                <p class="small-label">Selected Focus</p>
-                <span class="mini-dot"></span>
+      <section class="hero section">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-7 reveal">
+              <p class="eyebrow">Premium digital experiences</p>
+              <h1>We Build Digital Experiences That Grow Businesses.</h1>
+              <p class="hero-text">
+                We design strategic websites for ambitious brands that need elegant storytelling, modern performance, and conversion-focused growth.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact">Get Started</a>
+                <a class="btn btn-outline" href="#portfolio">View Portfolio</a>
               </div>
-              <div class="macbook-scene">
-                <div class="macbook">
-                  <div class="macbook-screen">
-                    <div class="screen-glare"></div>
-                    <div class="screen-preview">
-                      <div class="preview-topbar">
-                        <span class="preview-logo">Royal Spice</span>
-                        <span class="preview-pill">Book Table</span>
-                      </div>
-                      <div class="preview-banner">
-                        <h4>Elegant Dining, Elevated Online</h4>
-                        <p>Luxury food experiences crafted for unforgettable first impressions.</p>
-                      </div>
-                      <div class="preview-card-row">
-                        <div class="preview-card large"></div>
-                        <div class="preview-card"></div>
-                      </div>
-                      <div class="preview-footer">
-                        <span></span><span></span><span></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="macbook-base"></div>
+              <div class="hero-stats">
+                <div>
+                  <strong class="counter" data-target="120">0</strong>
+                  <span>Projects delivered</span>
+                </div>
+                <div>
+                  <strong class="counter" data-target="96">0</strong>
+                  <span>Client satisfaction</span>
+                </div>
+                <div>
+                  <strong class="counter" data-target="24">0</strong>
+                  <span>Hour response time</span>
                 </div>
               </div>
-              <p class="hero-card-copy">Luxury UI • Conversion-Focused • Lightning-fast performance</p>
             </div>
-          </div>
 
-          <div class="skill-badges" aria-hidden="true">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>Responsive Design</span>
-            <span>Premium UI</span>
-          </div>
-        </div>
-
-        <div class="scroll-indicator">
-          <span>↓</span>
-          <p>Scroll to Explore</p>
-        </div>
-      </section>
-
-      <section class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Why Clients Choose Me</p>
-          <h2>Why Clients Choose Me</h2>
-          <p class="section-subtitle">I focus on creating premium business websites that help brands stand out and attract customers.</p>
-        </div>
-        <div class="cards-grid why-grid">
-          <article class="glass-card why-card feature-card">
-            <div class="feature-icon">🚀</div>
-            <h3>Fast Delivery</h3>
-            <p>Fast turnarounds without compromising quality, polish, or strategy.</p>
-          </article>
-          <article class="glass-card why-card feature-card">
-            <div class="feature-icon">💎</div>
-            <h3>Premium Quality</h3>
-            <p>Thoughtful visuals and refined details that make a lasting impression.</p>
-          </article>
-          <article class="glass-card why-card feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>Mobile Friendly</h3>
-            <p>Responsive experiences built to feel excellent on every device.</p>
-          </article>
-          <article class="glass-card why-card feature-card">
-            <div class="feature-icon">🤝</div>
-            <h3>Friendly Communication</h3>
-            <p>Clear guidance and collaborative support from concept to launch.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="about" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Premium frontend experiences built for serious business growth.</h2>
-        </div>
-        <div class="about-grid">
-          <div class="glass-card about-card">
-            <p>
-              I’m Samira, a frontend web developer who creates beautiful business websites with modern UI, responsive layouts, and premium user experience. Every project is crafted to build trust, improve conversions, and make your brand unforgettable.
-            </p>
-          </div>
-          <div class="glass-card feature-list-card">
-            <ul>
-              <li>Business-focused design strategy</li>
-              <li>Mobile-first responsive layouts</li>
-              <li>Lightning-fast performance</li>
-              <li>SEO-ready and conversion-driven</li>
-            </ul>
+            <div class="col-lg-5 reveal">
+              <div class="hero-card">
+                <img
+                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                  alt="Professional team working in a modern creative studio"
+                />
+                <div class="hero-card-badge">Luxury UI • Fast Performance • SEO Ready</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Crafted with modern technologies and premium execution.</h2>
-        </div>
-        <div class="cards-grid skill-grid">
-          <article class="glass-card skill-card"><h3>HTML5</h3><p>Semantic, clean and structured foundation.</p></article>
-          <article class="glass-card skill-card"><h3>CSS3</h3><p>Elegant styling, glassmorphism and premium animation.</p></article>
-          <article class="glass-card skill-card"><h3>JavaScript</h3><p>Dynamic interactions and polished user flows.</p></article>
-          <article class="glass-card skill-card"><h3>Responsive Web Design</h3><p>Seamless experience across all screen sizes.</p></article>
-          <article class="glass-card skill-card"><h3>Modern UI Design</h3><p>Minimal, luxurious and conversion-driven visuals.</p></article>
-          <article class="glass-card skill-card"><h3>Website Optimization</h3><p>Speed, SEO and performance tuned for business impact.</p></article>
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Our Services</p>
+            <h2>Premium websites tailored to your business goals.</h2>
+            <p>From boutique restaurants to modern schools and high-growth agencies, we craft digital experiences that feel effortless and elevated.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal">
+              <article class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                <h3>Business Website</h3>
+                <p>Authority-first websites that communicate trust, value, and clarity.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+              <article class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Restaurant Website</h3>
+                <p>Immersive menus and booking flows that elevate your brand experience.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+              <article class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                <h3>Gym Website</h3>
+                <p>High-energy layouts with membership funnels and modern visual storytelling.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+              <article class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-school"></i></div>
+                <h3>School Website</h3>
+                <p>Warm, polished education platforms with clear communication and strong trust signals.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+              <article class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+                <h3>Portfolio Website</h3>
+                <p>Minimal personal brands that highlight expertise with confident storytelling.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+              <article class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>Landing Page Design</h3>
+                <p>Refined single-page campaigns built to convert with clarity and momentum.</p>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="portfolio" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Portfolio</p>
-          <h2>Luxury projects designed to feel unmistakably premium.</h2>
-        </div>
-        <div class="cards-grid project-grid">
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-royal">
-              <span class="thumb-badge">Restaurant</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Luxury Dining</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Royal Spice Restaurant</h3>
-                <p class="project-category-label">Elegant booking-first experience</p>
-              </div>
-              <p>Elegant booking flow and a refined visual system for a high-end dining experience.</p>
-              <div class="card-actions">
-                <a href="../Project-01-Royal-Spice/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
-              </div>
-            </div>
-          </article>
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-gym">
-              <span class="thumb-badge">Fitness</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Performance Brand</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Elite Gym</h3>
-                <p class="project-category-label">Bold, athletic and conversion-led</p>
-              </div>
-              <p>Bold, athletic design that builds credibility and gives memberships instant value.</p>
-              <div class="card-actions">
-                <a href="../Titan-Elite-Fitness-Club/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
-              </div>
-            </div>
-          </article>
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-school">
-              <span class="thumb-badge">Education</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Trust & Clarity</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Modern School</h3>
-                <p class="project-category-label">Clear, welcoming and polished</p>
-              </div>
-              <p>Clean architecture, polished storytelling, and a layout designed for trust.</p>
-              <div class="card-actions">
-                <a href="../Project-03-School/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
-              </div>
-            </div>
-          </article>
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-coffee">
-              <span class="thumb-badge">Cafe</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Local Warmth</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Coffee Shop</h3>
-                <p class="project-category-label">Inviting and highly discoverable</p>
-              </div>
-              <p>Warm, inviting visuals that increase local discovery and daily foot traffic.</p>
-              <div class="card-actions">
-                <a href="../PROJECT-04 — Coffee Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
-              </div>
-            </div>
-          </article>
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-barber">
-              <span class="thumb-badge">Barber</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Luxury Grooming</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Luxury Barber Shop</h3>
-                <p class="project-category-label">Stylish, appointment-first experience</p>
-              </div>
-              <p>Refined aesthetics and a stylish appointment-first experience for modern grooming brands.</p>
-              <div class="card-actions">
-                <a href="../PROJECT-05 — Luxury Barber Shop/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
-              </div>
-            </div>
-          </article>
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-hospital">
-              <span class="thumb-badge">Healthcare</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Calm & Trusted</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Premium Hospital</h3>
-                <p class="project-category-label">Professional and reassuring</p>
-              </div>
-              <p>Calming, dependable digital presence that feels trustworthy and professional.</p>
-              <div class="card-actions">
-                <a href="../PROJECT-06 — Premium Hospital/index.html" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#contact" class="btn btn-small btn-ghost">View Details</a>
-              </div>
-            </div>
-          </article>
+      <section class="section section-alt" id="portfolio">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Modern sites delivered with premium polish.</h2>
+            <p>Each project combines elegant layout, conversion strategy, and a seamless user journey across devices.</p>
+          </div>
 
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-royal">
-              <span class="thumb-badge">Business</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Premium Growth</span>
-              </div>
+          <div class="row g-4">
+            <div class="col-lg-6 reveal">
+              <article class="portfolio-card">
+                <div class="browser-frame">
+                  <div class="browser-toolbar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Restaurant website mockup" />
+                </div>
+                <div class="portfolio-copy">
+                  <h3>Restaurant Website</h3>
+                  <p>Immersive hospitality design with rich visuals and booking-focused UI.</p>
+                </div>
+              </article>
             </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Premium Business Agency Website</h3>
-                <p class="project-category-label">Modern corporate presence</p>
-              </div>
-              <p>A premium responsive business website built using HTML, CSS, JavaScript and Bootstrap. Features modern UI, glassmorphism cards, responsive layout, SEO-friendly structure and smooth animations.</p>
-              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-              <div class="card-actions">
-                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
-              </div>
+            <div class="col-lg-6 reveal">
+              <article class="portfolio-card">
+                <div class="browser-frame">
+                  <div class="browser-toolbar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Gym website mockup" />
+                </div>
+                <div class="portfolio-copy">
+                  <h3>Gym Website</h3>
+                  <p>Bold fitness experiences built around membership growth and motion.</p>
+                </div>
+              </article>
             </div>
-          </article>
-
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-royal">
-              <span class="thumb-badge">Restaurant</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Fine Dining</span>
-              </div>
+            <div class="col-lg-6 reveal">
+              <article class="portfolio-card">
+                <div class="browser-frame">
+                  <div class="browser-toolbar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="School website mockup" />
+                </div>
+                <div class="portfolio-copy">
+                  <h3>School Website</h3>
+                  <p>Polished educational experiences with a calm, reassuring visual tone.</p>
+                </div>
+              </article>
             </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Modern Restaurant Website</h3>
-                <p class="project-category-label">Elegant dining experience</p>
-              </div>
-              <p>A fully responsive restaurant website with elegant food sections, online menu, reservation system, modern animations and mobile-friendly design.</p>
-              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-              <div class="card-actions">
-                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
-              </div>
+            <div class="col-lg-6 reveal">
+              <article class="portfolio-card">
+                <div class="browser-frame">
+                  <div class="browser-toolbar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" alt="Business website mockup" />
+                </div>
+                <div class="portfolio-copy">
+                  <h3>Business Website</h3>
+                  <p>Elegant corporate sites that reflect leadership, clarity, and growth.</p>
+                </div>
+              </article>
             </div>
-          </article>
-
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-gym">
-              <span class="thumb-badge">Fitness</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Performance Brand</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Professional Gym Website</h3>
-                <p class="project-category-label">Premium training brand</p>
-              </div>
-              <p>A modern fitness website featuring trainers, pricing plans, workout programs, responsive layout and premium user experience.</p>
-              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-              <div class="card-actions">
-                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="glass-card project-card reveal">
-            <div class="project-thumb thumb-school">
-              <span class="thumb-badge">Education</span>
-              <div class="thumb-overlay">
-                <span class="thumb-category">Future Ready</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-heading">
-                <h3>Bright Future International School</h3>
-                <p class="project-category-label">Modern educational experience</p>
-              </div>
-              <p>A clean responsive school website with courses, admissions, facilities, gallery, contact section and modern educational design.</p>
-              <p class="project-category-label"><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-              <div class="card-actions">
-                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noreferrer">Live Demo</a>
-                <a href="#" class="btn btn-small btn-ghost">GitHub</a>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
 
-      <section id="services" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Services</p>
-          <h2>Premium solutions for modern businesses.</h2>
-        </div>
-        <div class="cards-grid services-grid">
-          <article class="glass-card service-card"><h3>Business Website Design</h3></article>
-          <article class="glass-card service-card"><h3>Landing Pages</h3></article>
-          <article class="glass-card service-card"><h3>Responsive Websites</h3></article>
-          <article class="glass-card service-card"><h3>Website Redesign</h3></article>
-          <article class="glass-card service-card"><h3>Portfolio Websites</h3></article>
-          <article class="glass-card service-card"><h3>Business Branding</h3></article>
-        </div>
-      </section>
-
-      <section class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Why Choose Me</p>
-          <h2>Luxury quality, clear strategy and reliable delivery.</h2>
-        </div>
-        <div class="cards-grid why-grid">
-          <article class="glass-card why-card"><h3>Modern UI</h3><p>Elegant visual systems with high-end polish.</p></article>
-          <article class="glass-card why-card"><h3>Fast Loading</h3><p>Optimized for performance and smooth experience.</p></article>
-          <article class="glass-card why-card"><h3>Responsive Design</h3><p>Beautiful on phone, tablet and desktop.</p></article>
-          <article class="glass-card why-card"><h3>Clean Code</h3><p>Structured and maintainable development.</p></article>
-          <article class="glass-card why-card"><h3>Professional Quality</h3><p>Premium aesthetics built for serious clients.</p></article>
-          <article class="glass-card why-card"><h3>Affordable Solutions</h3><p>High value without compromising quality.</p></article>
-        </div>
-      </section>
-
-      <section id="process" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Working Process</p>
-          <h2>A refined process from first conversation to final launch.</h2>
-        </div>
-        <div class="process-list">
-          <div class="glass-card process-item"><span>01</span><h3>Discussion</h3></div>
-          <div class="glass-card process-item"><span>02</span><h3>Planning</h3></div>
-          <div class="glass-card process-item"><span>03</span><h3>Design</h3></div>
-          <div class="glass-card process-item"><span>04</span><h3>Development</h3></div>
-          <div class="glass-card process-item"><span>05</span><h3>Testing</h3></div>
-          <div class="glass-card process-item"><span>06</span><h3>Delivery</h3></div>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-6 reveal">
+              <p class="eyebrow">About Northstar</p>
+              <h2>A modern agency built for thoughtful growth.</h2>
+              <p class="about-text">
+                We combine strategy, design, and development to create websites that feel premium, perform quickly, and help businesses stand out in a crowded market.
+              </p>
+              <div class="stats-grid">
+                <div class="stat-card"><h3>100%</h3><p>Responsive</p></div>
+                <div class="stat-card"><h3>Modern</h3><p>UI</p></div>
+                <div class="stat-card"><h3>Fast</h3><p>Performance</p></div>
+                <div class="stat-card"><h3>SEO</h3><p>Friendly</p></div>
+                <div class="stat-card"><h3>Clean</h3><p>Code</p></div>
+              </div>
+            </div>
+            <div class="col-lg-6 reveal">
+              <div class="about-card">
+                <h3>Why brands choose us</h3>
+                <ul class="check-list">
+                  <li><i class="fa-solid fa-check"></i> Strategic messaging and premium visual systems</li>
+                  <li><i class="fa-solid fa-check"></i> Lightning-fast performance with optimized assets</li>
+                  <li><i class="fa-solid fa-check"></i> Clean semantic code with accessible interactions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="testimonials" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">What You Can Expect</p>
-          <h2>What You Can Expect</h2>
-        </div>
-        <div class="cards-grid testimonial-grid">
-          <article class="glass-card quote-card trust-card">
-            <div class="feature-icon">🗣️</div>
-            <h3>Professional Communication</h3>
-            <p>Clear updates, thoughtful guidance, and a calm process from first idea to final launch.</p>
-          </article>
-          <article class="glass-card quote-card trust-card">
-            <div class="feature-icon">🧩</div>
-            <h3>Clean & Modern Code</h3>
-            <p>Structured, maintainable development that keeps your website reliable and easy to grow.</p>
-          </article>
-          <article class="glass-card quote-card trust-card">
-            <div class="feature-icon">✨</div>
-            <h3>Premium Responsive Design</h3>
-            <p>Every layout is polished across laptops, tablets, and mobile screens.</p>
-          </article>
-          <article class="glass-card quote-card trust-card">
-            <div class="feature-icon">🤝</div>
-            <h3>Long-Term Support</h3>
-            <p>Ongoing care and thoughtful refinement so your website stays strong after launch.</p>
-          </article>
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why Choose Us</p>
+            <h2>Every detail designed to feel effortless and premium.</h2>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="feature-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Responsive Design</h3>
+                <p>Elegant experiences that adapt beautifully to every screen size.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="feature-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Secure Website</h3>
+                <p>Reliable builds with strong structure and professional standards.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="feature-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Fast Loading</h3>
+                <p>Performance-first development with faster delivery and smoother browsing.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="feature-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>SEO Optimized</h3>
+                <p>Semantic structure and thoughtful content hierarchy built for discovery.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="feature-card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Modern UI</h3>
+                <p>Luxury-inspired visuals with calm color systems and refined motion.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 reveal">
+              <article class="feature-card">
+                <i class="fa-solid fa-mobile"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Every interaction is crafted for intuitive touch and fast navigation.</p>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="faq" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">FAQ</p>
-          <h2>Everything you need to know before we begin.</h2>
-        </div>
-        <div class="faq-list">
-          <details class="glass-card faq-item">
-            <summary>How long does a project take?</summary>
-            <p>Most premium websites are delivered within 5 to 14 days depending on scope.</p>
-          </details>
-          <details class="glass-card faq-item">
-            <summary>Do you build fully responsive websites?</summary>
-            <p>Yes. Every project is designed mobile-first and optimized across all devices.</p>
-          </details>
-          <details class="glass-card faq-item">
-            <summary>Can you redesign an existing website?</summary>
-            <p>Absolutely. I can modernize and improve your current site with a premium redesign.</p>
-          </details>
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Pricing</p>
+            <h2>Flexible packages for ambitious growth.</h2>
+            <p>Choose the service level that suits your stage of growth without compromising quality.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 reveal">
+              <article class="pricing-card">
+                <h3>Basic</h3>
+                <p class="price">$1.2k</p>
+                <ul>
+                  <li>Modern one-page design</li>
+                  <li>Responsive layout</li>
+                  <li>Contact form integration</li>
+                </ul>
+                <a class="btn btn-outline" href="#contact">Start with Basic</a>
+              </article>
+            </div>
+            <div class="col-lg-4 reveal">
+              <article class="pricing-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <h3>Standard</h3>
+                <p class="price">$2.4k</p>
+                <ul>
+                  <li>Multi-section premium website</li>
+                  <li>SEO-ready structure</li>
+                  <li>Animation and performance optimization</li>
+                </ul>
+                <a class="btn btn-primary" href="#contact">Choose Standard</a>
+              </article>
+            </div>
+            <div class="col-lg-4 reveal">
+              <article class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price">$4.8k</p>
+                <ul>
+                  <li>Full business growth platform</li>
+                  <li>Advanced UI and conversion strategy</li>
+                  <li>Launch support and optimization</li>
+                </ul>
+                <a class="btn btn-outline" href="#contact">Go Premium</a>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build something exceptional for your business.</h2>
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Trusted by founders, teams, and growing brands.</h2>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 reveal">
+              <article class="testimonial-card">
+                <div class="testimonial-top">
+                  <img src="https://i.pravatar.cc/100?img=32" alt="Client avatar" />
+                  <div>
+                    <h3>Olivia Chen</h3>
+                    <p>Founder, Luma Studio</p>
+                  </div>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>“The new site feels unmistakably premium. Our conversion rate has already improved.”</p>
+              </article>
+            </div>
+            <div class="col-lg-4 reveal">
+              <article class="testimonial-card">
+                <div class="testimonial-top">
+                  <img src="https://i.pravatar.cc/100?img=47" alt="Client avatar" />
+                  <div>
+                    <h3>Marcus Reed</h3>
+                    <p>Director, Northfield Labs</p>
+                  </div>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>“Every detail feels refined. The experience is polished and fast from the first click.”</p>
+              </article>
+            </div>
+            <div class="col-lg-4 reveal">
+              <article class="testimonial-card">
+                <div class="testimonial-top">
+                  <img src="https://i.pravatar.cc/100?img=12" alt="Client avatar" />
+                  <div>
+                    <h3>Amira Sol</h3>
+                    <p>Owner, Sol House</p>
+                  </div>
+                </div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>“The site captures our brand perfectly. It feels more elevated than anything we had before.”</p>
+              </article>
+            </div>
+          </div>
         </div>
-        <div class="contact-grid">
-          <form class="glass-card contact-form">
-            <div class="form-row"><label>Name</label><input type="text" required /></div>
-            <div class="form-row"><label>Email</label><input type="email" required /></div>
-            <div class="form-row"><label>Business Name</label><input type="text" /></div>
-            <div class="form-row"><label>Project Details</label><textarea rows="5" required></textarea></div>
-            <button class="btn btn-primary" type="submit">Submit</button>
-          </form>
-          <div class="glass-card contact-info">
-            <h3>Direct Contact</h3>
-            <p><a href="mailto:samiradev.business@gmail.com">samiradev.business@gmail.com</a></p>
-            <p><a href="https://instagram.com/officialsamiradev" target="_blank" rel="noreferrer">Instagram</a></p>
-            <p><a href="https://wa.me/samira.dev" target="_blank" rel="noreferrer">WhatsApp</a> <!-- Replace with direct WhatsApp link if username support is unavailable --></p>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Frequently Asked Questions</p>
+            <h2>Clear answers for a smooth launch.</h2>
+          </div>
+
+          <div class="faq-list reveal" role="list">
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="true">
+                How long does a project take?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Most premium website projects are completed within 2–4 weeks depending on scope and content readiness.</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Do you offer ongoing support?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. We offer launch support, maintenance plans, and ongoing improvements as your business grows.</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                Can you redesign an existing site?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely. We can refresh your current site with a premium redesign and improved performance.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s create something sharp, elevated, and memorable.</h2>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-6 reveal">
+              <div class="contact-card">
+                <form id="contact-form">
+                  <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" id="name" name="name" type="text" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" id="email" name="email" type="email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="project">Project Type</label>
+                    <select class="form-select" id="project" name="project">
+                      <option>Business Website</option>
+                      <option>Restaurant Website</option>
+                      <option>Gym Website</option>
+                      <option>School Website</option>
+                      <option>Portfolio Website</option>
+                      <option>Landing Page</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="message">Project Brief</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button class="btn btn-primary w-100" type="submit">Send Inquiry</button>
+                  <p class="form-message" role="status" aria-live="polite"></p>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-6 reveal">
+              <div class="contact-card">
+                <iframe
+                  title="Map placeholder for Northstar Studio"
+                  src="https://www.google.com/maps?q=New%20York%20City&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <div class="contact-details">
+                  <p><i class="fa-solid fa-envelope"></i> hello@northstarstudio.com</p>
+                  <p><i class="fa-solid fa-phone"></i> +1 (212) 555-0148</p>
+                  <p><i class="fa-solid fa-clock"></i> Mon–Fri • 9:00 AM – 6:00 PM</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-brand">
-          <p class="footer-name">SAMIRA.DEV</p>
-          <p>Frontend Web Developer</p>
-          <p>Building Premium Websites That Help Businesses Grow.</p>
-          <p>Email: <a href="mailto:samiradev.business@gmail.com">samiradev.business@gmail.com</a></p>
-          <p>Instagram: @officialsamiradev</p>
-          <p>WhatsApp: @samira.dev</p>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark">N</span>
+            <span>
+              <strong>Northstar Studio</strong>
+              <small>Digital Agency</small>
+            </span>
+          </a>
+          <p class="footer-text">Premium website design for high-modern brands and growth-focused businesses.</p>
         </div>
-        <div class="footer-socials">
-          <a class="social-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.5-6-3m12 6v-3.9a3.1 3.1 0 0 0-.9-2.3c3-.3 6.1-1.5 6.1-6.8A5.1 5.1 0 0 0 19 3.8a4.8 4.8 0 0 0-.1-3.5s-1.2-.4-3.9 1.5a13.2 13.2 0 0 0-7 0C5.3.3 4.1.7 4.1.7A4.8 4.8 0 0 0 4 4.2a5.1 5.1 0 0 0-1.4 3.5c0 5.3 3.1 6.5 6.1 6.8A3.1 3.1 0 0 0 8 15.3V19"></path></svg>
-          </a>
-          <a class="social-link" href="https://instagram.com/officialsamiradev" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.5"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
-          </a>
-          <a class="social-link" href="https://wa.me/samira.dev" target="_blank" rel="noreferrer" aria-label="WhatsApp"> <!-- Replace with direct WhatsApp link if username support is unavailable -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 19.8 3 21l1.2-3.2A9.2 9.2 0 1 1 6.2 19.8Z"></path><path d="M8.5 8.8h.01"></path><path d="M12 8.8h.01"></path><path d="M15.5 8.8h.01"></path></svg>
-          </a>
-          <a class="social-link" href="mailto:samira@samira.dev" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
-          </a>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <p class="footer-copy">© 2026 Samira.dev</p>
+        <div>
+          <h3>Social</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Northstar Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
       </div>
     </footer>
 
+    <button class="floating-btn" type="button" aria-label="Scroll to contact section">Let’s Talk</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
